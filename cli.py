@@ -13,8 +13,8 @@ MODULE_TEMPLATE = {
 
     """,
     "route.py": """from flask import request
-from . import {name}
-from .service import get_{name}
+from . import {name}Blueprint
+from .service import index
 
     
 @{name}Blueprint.route('/', methods=['GET'])
